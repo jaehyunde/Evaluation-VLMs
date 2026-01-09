@@ -1,0 +1,102 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.18
+    cli_version: 0.22.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1762875877
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      2:
+      - 1
+      - 5
+      - 53
+      3:
+      - 2
+      - 14
+      - 37
+      - 42
+      - 62
+      4: 3.10.18
+      5: 0.22.3
+      13: linux-x86_64
+    e:
+      noxgxclp2cyab04lzlkettyfw7oms6ll:
+        os: Linux-6.8.0-85-generic-x86_64-with-glibc2.39
+        python: CPython 3.10.18
+        started_at: '2025-11-11T15:44:37.146745Z'
+        args:
+        - --BATCH_SIZE=32
+        - --EPOCHS=30
+        - --LR=0.0005427275657559134
+        - --d_model=256
+        - --nhead=8
+        - --num_layers=3
+        program: /home/stud_homes/s6010479/Jayproject/Transformer/sweeptrain.py
+        code_path: Transformer/sweeptrain.py
+        code_path_local: sweeptrain.py
+        git:
+          remote_url: git@github.com:autoshin0322/Jayproject.git
+          commit: c92741508ceaea4fb4cf3b909cd6d830f004ceb6
+        email: autoshin0322@gmail.com
+        root: /home/stud_homes/s6010479/Jayproject/Transformer
+        host: gondor
+        executable: /home/stud_homes/s6010479/miniconda3/envs/posevit/bin/python
+        cpu_count: 32
+        cpu_count_logical: 64
+        gpu_type: NVIDIA L40S
+        gpu_count: 4
+        disk:
+          /:
+            total: '470306373632'
+            used: '357825970176'
+        memory:
+          total: '202309451776'
+        gpu_nvidia:
+        - name: NVIDIA L40S
+          memory_total: '48305799168'
+          cuda_cores: 18176
+          architecture: Ada
+          uuid: GPU-e7f1f5b8-1a9d-63f0-052b-fae92945af2d
+        - name: NVIDIA L40S
+          memory_total: '48305799168'
+          cuda_cores: 18176
+          architecture: Ada
+          uuid: GPU-1dc5f49e-6090-bcb7-f5ff-fdc4840fd9a2
+        - name: NVIDIA L40S
+          memory_total: '48305799168'
+          cuda_cores: 18176
+          architecture: Ada
+          uuid: GPU-5f486164-f234-bb1b-76f9-ede52cbbc994
+        - name: NVIDIA L40S
+          memory_total: '48305799168'
+          cuda_cores: 18176
+          architecture: Ada
+          uuid: GPU-8a0db40c-5f9f-c1a6-8854-4592d8651f49
+        cuda_version: '12.9'
+        writer_id: noxgxclp2cyab04lzlkettyfw7oms6ll
+BATCH_SIZE:
+  desc: null
+  value: 32
+EPOCHS:
+  desc: null
+  value: 30
+LR:
+  desc: null
+  value: 0.0005427275657559134
+d_model:
+  desc: null
+  value: 256
+nhead:
+  desc: null
+  value: 8
+num_layers:
+  desc: null
+  value: 3

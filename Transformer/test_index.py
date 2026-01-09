@@ -2,9 +2,9 @@ import os
 import pandas as pd
 
 # === 경로 설정 ===
-FEATURE_DIR = "data/testfeatures"
-LABEL_DIR = "data/testlabels"
-OUTPUT_PATH = "data/index_test.csv"
+FEATURE_DIR = "test/testfeatures"
+LABEL_DIR = "test/testlabels"
+OUTPUT_PATH = "test/index_test.csv"
 
 os.makedirs("data", exist_ok=True)
 

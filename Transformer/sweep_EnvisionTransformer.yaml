@@ -1,0 +1,29 @@
+# EnvisionTransformer verschiedene Parametern
+
+program: sweeptrain.py
+project: EnvisionTransformer
+method: bayes  # or 'random' or 'grid'
+metric:
+  name: final_val_f1   # wandb.log()에 기록되는 이름
+  goal: maximize
+
+parameters:
+  BATCH_SIZE:
+    values: [16, 32, 64, 128]
+
+  LR:
+    distribution: log_uniform_values
+    min: 5e-4 #0.005
+    max: 1e-3 #0.001
+
+  d_model:
+    values: [128, 256]
+
+  nhead:
+    values: [4, 8]
+
+  num_layers:
+    values: [2, 3, 4]
+
+  EPOCHS:
+    values: [25, 30, 35]

@@ -4,7 +4,7 @@ import pandas as pd
 # === 경로 설정 ===
 FEATURE_DIR = "data/features"
 LABEL_DIR = "data/labels"
-OUTPUT_PATH = "data/index_all.csv"
+OUTPUT_PATH = "test/index_all.csv"
 
 os.makedirs("data", exist_ok=True)
 

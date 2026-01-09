@@ -1,0 +1,28 @@
+{
+  "os": "Linux-5.4.0-200-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.10.18",
+  "startedAt": "2025-11-12T15:18:04.377911Z",
+  "program": "/home/stud_homes/s6010479/Jayproject/Transformer/ratiosweep.py",
+  "codePath": "Transformer/ratiosweep.py",
+  "codePathLocal": "ratiosweep.py",
+  "git": {
+    "remote": "git@github.com:autoshin0322/Jayproject.git",
+    "commit": "c92741508ceaea4fb4cf3b909cd6d830f004ceb6"
+  },
+  "email": "autoshin0322@gmail.com",
+  "root": "/home/stud_homes/s6010479/Jayproject/Transformer",
+  "host": "eschar",
+  "executable": "/home/stud_homes/s6010479/miniconda3/envs/posevit/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "424284069888",
+      "used": "224898449408"
+    }
+  },
+  "memory": {
+    "total": "67513634816"
+  },
+  "writerId": "cbtmocsainrwhsrl8vrky34brp55xqzr"
+}

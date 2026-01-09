@@ -1,0 +1,75 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            4v7ctekza2m4cdfpdgoygodttgy8ji8e:
+                args:
+                    - --alpha=0.1
+                    - --run_id=5
+                codePath: Transformer/ratiosweep.py
+                codePathLocal: ratiosweep.py
+                cpu_count: 32
+                cpu_count_logical: 64
+                cudaVersion: "12.9"
+                disk:
+                    /:
+                        total: "470306373632"
+                        used: "357869948928"
+                email: autoshin0322@gmail.com
+                executable: /home/stud_homes/s6010479/miniconda3/envs/posevit/bin/python
+                git:
+                    commit: c92741508ceaea4fb4cf3b909cd6d830f004ceb6
+                    remote: git@github.com:autoshin0322/Jayproject.git
+                gpu: NVIDIA L40S
+                gpu_count: 4
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-e7f1f5b8-1a9d-63f0-052b-fae92945af2d
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-1dc5f49e-6090-bcb7-f5ff-fdc4840fd9a2
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-5f486164-f234-bb1b-76f9-ede52cbbc994
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-8a0db40c-5f9f-c1a6-8854-4592d8651f49
+                host: gondor
+                memory:
+                    total: "202309451776"
+                os: Linux-6.8.0-85-generic-x86_64-with-glibc2.39
+                program: /home/stud_homes/s6010479/Jayproject/Transformer/ratiosweep.py
+                python: CPython 3.10.18
+                root: /home/stud_homes/s6010479/Jayproject/Transformer
+                startedAt: "2025-11-12T00:32:57.832653Z"
+                writerId: 4v7ctekza2m4cdfpdgoygodttgy8ji8e
+        m: []
+        python_version: 3.10.18
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 14
+            "4": 3.10.18
+            "5": 0.22.3
+            "12": 0.22.3
+            "13": linux-x86_64
+alpha:
+    value: 0.1
+run_id:
+    value: 5

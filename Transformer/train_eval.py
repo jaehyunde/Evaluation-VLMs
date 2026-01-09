@@ -17,18 +17,21 @@ from sklearn.metrics import (
 # =====================
 # 설정
 # =====================
-INDEX_PATH = "data/index_all.csv"
-OUT_DIR = "outputs"
-CKPT_PATH = os.path.join(OUT_DIR, "ckpts/posevit_best.pt")
-REPORT_PATH = os.path.join(OUT_DIR, "reports/posevit_report.csv")
-PLOT_PATH = os.path.join(OUT_DIR, "reports/posevit_comparison.png")
-DETAILED_REPORT_PATH = os.path.join(OUT_DIR, "reports/posevit_detailed_report.csv")  # ✅ Added
+dataset = "SaGA"
+INDEX_PATH = "test/index_all.csv"
+OUT_DIR = "test/outputs"
+CKPT_PATH = os.path.join(OUT_DIR, f"ckpts/{dataset}posevit_best.pt")
+REPORT_PATH = os.path.join(OUT_DIR, f"reports/{dataset}.csv")
+PLOT_PATH = os.path.join(OUT_DIR, f"reports/{dataset}.png")
+DETAILED_REPORT_PATH = os.path.join(OUT_DIR, f"reports/{dataset}_detailedreport.csv")  # ✅ Added
 
-DEVICE = "cuda:0" if torch.cuda.is_available() else "cpu"
+os.makedirs(OUT_DIR, exist_ok=True)
+
+DEVICE = "cuda:1" if torch.cuda.is_available() else "cpu"
 T, S = 32, 16
-BATCH_SIZE = 8
-EPOCHS = 20
-LR = 0.0003
+BATCH_SIZE = 32
+EPOCHS = 25
+LR = 0.0005070
 D_IN = 80  # feature 차원 (예: MediaPipe upper body 등)
 
 # ✅ 현재 학습에 사용 중인 디바이스 확인
@@ -40,23 +43,23 @@ os.makedirs(os.path.join(OUT_DIR, "reports"), exist_ok=True)
 # === Step 1: 데이터 분리 ===
 print("📂 Loading index files...")
 
-index_all = pd.read_csv("data/index_all.csv")
-index_test = pd.read_csv("data/index_test.csv")  # ✅ 외부 테스트 세트 사용
+index_all = pd.read_csv("test/index_all.csv")
+index_test = pd.read_csv("test/index_test.csv")  # ✅ 외부 테스트 세트 사용
 
 # train/val = 90% / 10%
 train_df, val_df = train_test_split(index_all, test_size=0.1, random_state=42)
 
-train_df.to_csv("data/index_train.csv", index=False)
-val_df.to_csv("data/index_val.csv", index=False)
+train_df.to_csv("test/index_train.csv", index=False)
+val_df.to_csv("test/index_val.csv", index=False)
 
 print(f"✅ Train: {len(train_df)} clips, Val: {len(val_df)}, Test (external): {len(index_test)}")
 
 # =====================
 # 2️⃣ Dataset & Dataloader
 # =====================
-train_ds = PoseSeqDataset("data/index_train.csv", T=T, S=S)
-val_ds = PoseSeqDataset("data/index_val.csv", T=T, S=S)
-test_ds = PoseSeqDataset("data/index_test.csv", T=T, S=S)
+train_ds = PoseSeqDataset("test/index_train.csv", T=T, S=S)
+val_ds = PoseSeqDataset("test/index_val.csv", T=T, S=S)
+test_ds = PoseSeqDataset("test/index_test.csv", T=T, S=S)
 
 train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True)
 val_loader = DataLoader(val_ds, batch_size=BATCH_SIZE)
@@ -106,9 +109,9 @@ for epoch in range(1, EPOCHS + 1):
         ckpt = {
             "cfg": {
                 "d_in": D_IN,
-                "d_model": 128,
-                "nhead": 4,
-                "num_layers": 2,
+                "d_model": 256,
+                "nhead": 8,
+                "num_layers": 3,
                 "num_classes": 2,
                 "T": T,
                 "S": S,

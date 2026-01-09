@@ -18,7 +18,7 @@ from sklearn.metrics import (
 # =====================
 # 0️⃣ W&B 초기화
 # =====================
-wandb.init(project="TransformerBatch64-128")
+wandb.init(project="EnvisionTransformer")
 config = wandb.config
 
 # Sweep에서 전달받은 값 또는 기본값 사용

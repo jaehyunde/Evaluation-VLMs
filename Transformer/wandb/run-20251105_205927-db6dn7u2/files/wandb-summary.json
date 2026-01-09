@@ -1,1 +1,0 @@
-{"_runtime":150,"final_val_accuracy":0.7425639858642108,"final_test_precision":0.233265470552836,"final_val_f1":0.6096830825122028,"final_test_recall":0.9629687242647732,"final_val_precision":0.795255996187854,"final_test_accuracy":0.3012357437224458,"final_test_f1":0.37555748459027394,"_wandb":{"runtime":150},"final_val_recall":0.49433099113034606}

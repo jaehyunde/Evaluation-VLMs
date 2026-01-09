@@ -1,0 +1,17 @@
+clip,feature_path,label_path
+9-082.h264,data/features/9-082.h264.mp4_features.npy,data/labels/9-082.h264.csv
+9-084.h264,data/features/9-084.h264.mp4_features.npy,data/labels/9-084.h264.csv
+P006_S02_front-video_Z_S_L,data/features/P006_S02_front-video_Z_S_L.mp4_features.npy,data/labels/P006_S02_front-video_Z_S_L.csv
+P040_S19_front-video_Z_S_L,data/features/P040_S19_front-video_Z_S_L.mp4_features.npy,data/labels/P040_S19_front-video_Z_S_L.csv
+9-023.h264,data/features/9-023.h264.mp4_features.npy,data/labels/9-023.h264.csv
+P039_S18_front-video_Z_S_L,data/features/P039_S18_front-video_Z_S_L.mp4_features.npy,data/labels/P039_S18_front-video_Z_S_L.csv
+9-075.h264,data/features/9-075.h264.mp4_features.npy,data/labels/9-075.h264.csv
+9-079.h264,data/features/9-079.h264.mp4_features.npy,data/labels/9-079.h264.csv
+9-012.h264,data/features/9-012.h264.mp4_features.npy,data/labels/9-012.h264.csv
+9-009.h264,data/features/9-009.h264.mp4_features.npy,data/labels/9-009.h264.csv
+9-013.h264,data/features/9-013.h264.mp4_features.npy,data/labels/9-013.h264.csv
+9-006.h264,data/features/9-006.h264.mp4_features.npy,data/labels/9-006.h264.csv
+9-003.h264,data/features/9-003.h264.mp4_features.npy,data/labels/9-003.h264.csv
+9-037.h264,data/features/9-037.h264.mp4_features.npy,data/labels/9-037.h264.csv
+9-046.h264,data/features/9-046.h264.mp4_features.npy,data/labels/9-046.h264.csv
+9-065.h264,data/features/9-065.h264.mp4_features.npy,data/labels/9-065.h264.csv

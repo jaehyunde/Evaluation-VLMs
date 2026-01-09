@@ -11,18 +11,18 @@ torch.cuda.ipc_collect()
 # 1. 모델 및 프로세서 로드
 # -----------------------------------------------------------
 MODEL_NAME = "Qwen/Qwen2.5-VL-7B-Instruct"
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-    MODEL_NAME, torch_dtype="auto", device_map="cuda:0"
+    MODEL_NAME, torch_dtype="auto", device_map="auto"
 )
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
 
 # -----------------------------------------------------------
 # 2. 입력 / 출력 경로
 # -----------------------------------------------------------
-INPUT_DIR = "video42"             # 모든 .mp4 파일이 들어있는 폴더
-OUTPUT_CSV = "Video42Output.csv"      # 결과 저장 파일
+INPUT_DIR = "testdata/videos/edab"             # 모든 .mp4 파일이 들어있는 폴더
+OUTPUT_CSV = "edab_output1.csv"      # 결과 저장 파일
 
 # -----------------------------------------------------------
 # 3. CSV 헤더 생성
@@ -61,7 +61,7 @@ for file_name in sorted(os.listdir(INPUT_DIR)):
                 },
                 {
                     "type": "text",
-                    "text": ("You are an expert in hand gesture recognition and classification based on visual input. Analyze the given video (including audio and transcript if available), and classify the primary hand gesture performed in the video into one of the following eight categories: representing, molding, indexing, drawing, other, beat, emblematic, or acting. Each label is defined as follows: representing: gestures that describe an object, shape, or scene / molding: gestures that simulate shaping or transforming objects with the hands / indexing: gestures that point to a direction, object, or place / drawing: gestures that mimic drawing in the air / other: gestures that don’t clearly fit into any of the categories / beat: rhythmic gestures that follow the flow of speech without semantic meaning / emblematic: culturally defined gestures with fixed meanings (e.g., thumbs up, peace sign) / acting: gestures that mime an action or movement. Make your decision based on the visible hand movement; use speech content only to support your interpretation when necessary. Be precise and avoid ambiguity. Output must follow this rule: if I request explanation, output the label followed by a 1–2 sentence reason explaining your decision; if I request no explanation, output only the classification label. Classify this gesture with no explanation. Take a deep breath and let’s work this out in a step-by-step way to make sure we get the right answer."
+		    "text": ("Classify the hand gesture performed by the 3D character in the input video into one of the following categories: emblematic, indexing, representing, molding, acting, drawing, beat, or other. Output only one label."
                     ),
                 },
             ],

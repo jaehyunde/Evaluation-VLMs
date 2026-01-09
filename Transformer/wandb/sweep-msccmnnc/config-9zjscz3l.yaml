@@ -1,0 +1,14 @@
+wandb_version: 1
+
+BATCH_SIZE:
+  value: 128
+EPOCHS:
+  value: 30
+LR:
+  value: 0.000610053540235261
+d_model:
+  value: 256
+nhead:
+  value: 8
+num_layers:
+  value: 2

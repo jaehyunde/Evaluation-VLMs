@@ -1,0 +1,17 @@
+clip,feature_path,label_path
+9-080.h264,test/features/9-080.h264.mp4_features.npy,test/labels/9-080.h264.csv
+9-082.h264,test/features/9-082.h264.mp4_features.npy,test/labels/9-082.h264.csv
+M3D_TED_MS2010,test/features/M3D_TED_MS2010.mp4_features.npy,test/labels/M3D_TED_MS2010.csv
+P030_S14_front-video_Z_S_L,test/features/P030_S14_front-video_Z_S_L.mp4_features.npy,test/labels/P030_S14_front-video_Z_S_L.csv
+9-023.h264,test/features/9-023.h264.mp4_features.npy,test/labels/9-023.h264.csv
+P029_S13_front-video_Z_S_L,test/features/P029_S13_front-video_Z_S_L.mp4_features.npy,test/labels/P029_S13_front-video_Z_S_L.csv
+9-074.h264,test/features/9-074.h264.mp4_features.npy,test/labels/9-074.h264.csv
+9-077.h264,test/features/9-077.h264.mp4_features.npy,test/labels/9-077.h264.csv
+9-012.h264,test/features/9-012.h264.mp4_features.npy,test/labels/9-012.h264.csv
+9-009.h264,test/features/9-009.h264.mp4_features.npy,test/labels/9-009.h264.csv
+9-013.h264,test/features/9-013.h264.mp4_features.npy,test/labels/9-013.h264.csv
+9-006.h264,test/features/9-006.h264.mp4_features.npy,test/labels/9-006.h264.csv
+9-003.h264,test/features/9-003.h264.mp4_features.npy,test/labels/9-003.h264.csv
+9-036.h264,test/features/9-036.h264.mp4_features.npy,test/labels/9-036.h264.csv
+9-045.h264,test/features/9-045.h264.mp4_features.npy,test/labels/9-045.h264.csv
+9-063.h264,test/features/9-063.h264.mp4_features.npy,test/labels/9-063.h264.csv

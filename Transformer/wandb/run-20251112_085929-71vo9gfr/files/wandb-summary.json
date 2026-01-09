@@ -1,0 +1,1 @@
+{"val_recall":0.28233194292419805,"_runtime":368,"run_id":5,"epoch":1,"_step":0,"val_loss":0.5672905735830043,"val_f1":0.40411297266016455,"val_accuracy":0.6937173534532791,"alpha":0.7,"_timestamp":1.7629347394230602e+09,"val_precision":0.7106406215095932,"_wandb":{"runtime":368}}

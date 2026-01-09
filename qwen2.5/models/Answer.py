@@ -3,7 +3,7 @@ from qwen_vl_utils import process_vision_info
 
 # default: Load the model on the available device(s)
 model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-    "Qwen/Qwen2.5-VL-7B-Instruct", torch_dtype="auto", device_map="cuda:1"
+    "Qwen/Qwen2.5-VL-7B-Instruct", torch_dtype="auto", device_map="cuda:3"
 )
 
 # We recommend enabling flash_attention_2 for better acceleration and memory saving, especially in multi-image and video scenarios.
@@ -29,14 +29,31 @@ messages = [
         "content": [
             {
                 "type": "video",
-                "video": "videos_to_label/video43-026.mp4",
+                "video": "testdata/videos/video42/007.mp4",
                 "max_pixels": 360 * 420,
                 "fps": 32.0,
             },
-            {"type": "text", "text": "You are an expert in hand gesture recognition and classification based on visual input. Analyze the given video (including audio and transcript if available), and classify the primary hand gesture performed in the video into one of the following eight categories: representing, molding, indexing, drawing, other, beat, emblematic, or acting. Each label is defined as follows: representing: gestures that describe an object, shape, or scene / molding: gestures that simulate shaping or transforming objects with the hands / indexing: gestures that point to a direction, object, or place / drawing: gestures that mimic drawing in the air / other: gestures that don’t clearly fit into any of the categories / beat: rhythmic gestures that follow the flow of speech without semantic meaning / emblematic: culturally defined gestures with fixed meanings (e.g., thumbs up, peace sign) / acting: gestures that mime an action or movement. Make your decision based on the visible hand movement; use speech content only to support your interpretation when necessary. Be precise and avoid ambiguity. Output should include: (1) the selected label as a single word, followed by (2) a brief explanation (1–2 sentences) describing why you chose that label based on the gesture observed. Take a deep breath and let’s work this out in a step-by-step way to make sure we get the right answer."},
+            {"type": "text",
+	     "text": (
+                    "Frame-level gesture detection task.\n"
+                    "Analyze ONLY the hands.\n\n"
+                    "Definition:\n"
+                    "● gesture = intentional communicative hand movement\n"
+                    "● non-gesture = resting, random motion, or transition\n\n"
+                    "Task:\n"
+                    "Classify THIS SINGLE FRAME as either 'gesture' or 'non-gesture'.\n\n"
+                    "Rules:\n"
+                    "- Do NOT describe the frame.\n"
+                    "- Do NOT output any explanation.\n"
+                    "- Output EXACTLY one of the following two tokens:\n"
+                    "gesture\n"
+                    "non-gesture"
+                )
+	    },
         ],
     }
 ]
+
 # Preparation for inference
 text = processor.apply_chat_template(
     messages, tokenize=False, add_generation_prompt=True
@@ -49,7 +66,7 @@ inputs = processor(
     padding=True,
     return_tensors="pt",
 )
-inputs = inputs.to("cuda:1")
+inputs = inputs.to("cuda:3")
 
 # Inference: Generation of the output
 generated_ids = model.generate(**inputs, max_new_tokens=128)

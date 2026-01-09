@@ -1,0 +1,17 @@
+clip,feature_path,label_path
+M3D_TED_ES2016,data/features/M3D_TED_ES2016.mp4_features.npy,data/labels/M3D_TED_ES2016.csv
+M3D_TED_KF2014,data/features/M3D_TED_KF2014.mp4_features.npy,data/labels/M3D_TED_KF2014.csv
+P018_S08_front-video_Z_S_L,data/features/P018_S08_front-video_Z_S_L.mp4_features.npy,data/labels/P018_S08_front-video_Z_S_L.csv
+P046_S22_front-video_Z_S_L,data/features/P046_S22_front-video_Z_S_L.mp4_features.npy,data/labels/P046_S22_front-video_Z_S_L.csv
+9-023.h264,data/features/9-023.h264.mp4_features.npy,data/labels/9-023.h264.csv
+P045_S21_front-video_Z_S_L,data/features/P045_S21_front-video_Z_S_L.mp4_features.npy,data/labels/P045_S21_front-video_Z_S_L.csv
+9-083.h264,data/features/9-083.h264.mp4_features.npy,data/labels/9-083.h264.csv
+M3D_TED_AS2010,data/features/M3D_TED_AS2010.mp4_features.npy,data/labels/M3D_TED_AS2010.csv
+9-011.h264,data/features/9-011.h264.mp4_features.npy,data/labels/9-011.h264.csv
+9-008.h264,data/features/9-008.h264.mp4_features.npy,data/labels/9-008.h264.csv
+9-012.h264,data/features/9-012.h264.mp4_features.npy,data/labels/9-012.h264.csv
+9-005.h264,data/features/9-005.h264.mp4_features.npy,data/labels/9-005.h264.csv
+9-002.h264,data/features/9-002.h264.mp4_features.npy,data/labels/9-002.h264.csv
+9-036.h264,data/features/9-036.h264.mp4_features.npy,data/labels/9-036.h264.csv
+9-048.h264,data/features/9-048.h264.mp4_features.npy,data/labels/9-048.h264.csv
+9-070.h264,data/features/9-070.h264.mp4_features.npy,data/labels/9-070.h264.csv
