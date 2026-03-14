@@ -1,7 +1,7 @@
 import os
 import torch
 import csv
-import cv2   # 프레임 세는 용도로만 사용 (가볍고 빠름)
+import cv2   # check number of frames
 from transformers import LlavaNextVideoForConditionalGeneration, LlavaNextVideoProcessor
 
 # ---------------------------------------
@@ -19,7 +19,7 @@ processor = LlavaNextVideoProcessor.from_pretrained("llava-hf/LLaVA-NeXT-Video-7
 # ---------------------------------------
 # 2. 비디오 폴더
 # ---------------------------------------
-video_name = "video41_new"
+video_name = "angle_3"
 video_dir = f"/home/stud_homes/s6010479/Jayproject/qwen2.5/models/testdata/videos/{video_name}/"
 video_files = sorted([f for f in os.listdir(video_dir) if f.endswith(".mp4")])
 
@@ -27,7 +27,7 @@ video_files = sorted([f for f in os.listdir(video_dir) if f.endswith(".mp4")])
 # 3. CSV 출력 설정
 # ---------------------------------------
 os.makedirs("output", exist_ok=True)
-csv_path = f"output/{video_name}8class.csv"
+csv_path = f"output/pure8class/{video_name}.csv"
 
 with open(csv_path, "w", newline="") as f:
     writer = csv.writer(f)
@@ -53,7 +53,7 @@ def build_conversation(path):
                 {
                     "type": "text",
                     "text":
-                    ("You are an expert in gesture classification. The input is a video of a 3D human-like character created from motion capture data, performing a single hand gesture. Your task is to classify the gesture into one of these eight categories: emblematic, indexing, representing, molding, acting, drawing, beat, other, NoGesture. Focus only on hand movement and shape. Ignore facial expressions, eye gaze, or body posture. Carefully observe the gesture, determine its communicative function, and output only the final label in lowercase. Do not include explanations or any extra words — only one label from the list."
+                    ("You are an expert in gesture classification. The input is a video of a 3D human-like character created from motion capture data, performing a single hand gesture. Your task is to classify the gesture into one of these eight categories: emblematic, indexing, representing, molding, acting, drawing, beat, other. Focus only on hand movement and shape. Ignore facial expressions, eye gaze, or body posture. Carefully observe the gesture, determine its communicative function, and output only the final label in lowercase. Do not include explanations or any extra words — only one label from the list."
                     ),
                 },
                 {"type": "video", "path": path},

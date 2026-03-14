@@ -1,21 +1,20 @@
-# Git이 절대 추적하면 안 되는 목록
+#Folder
+Transformer/
+EnvisionTest/
+EnvisionParam/
+LLaVA-Pose/
+resultold/
 
-# 1. 모든 output(결과물) 폴더
-EnvisionParam/output/
+#Dataset
+*.mp4
 
-# 2. 50MB가 넘는 원본 비디오 데이터
-EnvisionParam/videos_to_label/*.mp4
+#Codes (do not need)
 
-qwen2.5/models/videos_to_label/*.mp4
 
-Transformer/videos_to_label/*.mp4
-Transformer/output_envision/tracked_videos/
-Transformer/.envision_tmp/
-Transformer/data/features/
-Transformer/labels/
-Transformer/outputs/reports/
-Transformer/outputs/preds/
+# Logs
+logs/
+__pycache__/
+.ipynb_checkpoints/
 
-# 3. 기타 (나중에 필요할 수도 있음)
-*.log
+# OS temporary
 .DS_Store

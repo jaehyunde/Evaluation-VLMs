@@ -1,0 +1,2 @@
+Angle,Valid_Samples,Invalid_Samples,Invalid_Details,Accuracy,Prec(m),Rec(m),F1(m),Prec(w),Rec(w),F1(w)
+angle_1,73,0,None,0.1644,0.2805,0.1676,0.1367,0.3791,0.1644,0.1738

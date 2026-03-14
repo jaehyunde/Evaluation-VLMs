@@ -1,0 +1,2 @@
+Angle,Valid_Samples,Invalid_Samples,Invalid_Details,Accuracy,Prec(m),Rec(m),F1(m),Prec(w),Rec(w),F1(w)
+angle_2,72,1,'clapping': 1,0.2192,0.0593,0.1271,0.068,0.1145,0.2192,0.1246

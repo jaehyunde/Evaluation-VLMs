@@ -1,0 +1,2 @@
+Angle,Valid_Samples,Invalid_Samples,Invalid_Details,Accuracy,Prec(m),Rec(m),F1(m),Prec(w),Rec(w),F1(w)
+angle_1,34,39,"'wave': 38, 'clapping': 1",0.2603,0.0848,0.1458,0.0888,0.171,0.2603,0.1709

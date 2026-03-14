@@ -25,7 +25,7 @@ if processor.tokenizer.pad_token_id is None:
     processor.tokenizer.pad_token_id = processor.tokenizer.eos_token_id
 model.generation_config.pad_token_id = processor.tokenizer.pad_token_id
 
-videoname = "angle_1"
+videoname = "video41_new"
 # -------------------------------------------------------
 # 2. 입력 비디오 폴더
 # -------------------------------------------------------

@@ -25,7 +25,7 @@ if processor.tokenizer.pad_token_id is None:
     processor.tokenizer.pad_token_id = processor.tokenizer.eos_token_id
 model.generation_config.pad_token_id = processor.tokenizer.pad_token_id
 
-videoname = "video41_new"
+videoname = "angle_3"
 # -------------------------------------------------------
 # 2. 입력 비디오 폴더
 # -------------------------------------------------------
@@ -42,7 +42,7 @@ print(f"Found {len(video_files)} video files.")
 # -------------------------------------------------------
 def build_conversation(video_path):
     prompt_text = (
-    "You are an expert in gesture classification. The input is a video of a 3D human-like character created from motion capture data, performing a single hand gesture. Your task is to classify the gesture into one of these eight categories: emblematic, indexing, representing, molding, acting, drawing, beat, other, NoGesture. Focus only on hand movement and shape. Ignore facial expressions, eye gaze, or body posture. Carefully observe the gesture, determine its communicative function, and output only the final label in lowercase. Do not include explanations or any extra words — only one label from the list."
+    "You are an expert in gesture classification. The input is a video of a 3D human-like character created from motion capture data, performing a single hand gesture. Your task is to classify the gesture into one of these eight categories: emblematic, indexing, representing, molding, acting, drawing, beat, other. Focus only on hand movement and shape. Ignore facial expressions, eye gaze, or body posture. Carefully observe the gesture, determine its communicative function, and output only the final label in lowercase. Do not include explanations or any extra words — only one label from the list."
     )
     return [
         {
@@ -140,25 +140,25 @@ def predict_gesture(video_path):
     print(f"   raw output: {repr(text)}")
 
     # --- F) Gesture/NoGesture 필터링 ---
-    t = text.lower().replace(" ", "")
+#    t = text.lower().replace(" ", "")
 
-    if t.startswith("gesture"):
-        return "Gesture"
-    if t.startswith("nogesture"):
-        return "NoGesture"
+#    if t.startswith("gesture"):
+#        return "Gesture"
+#    if t.startswith("nogesture"):
+#        return "NoGesture"
 
-    if "gesture" in t:
-        return "Gesture"
-    if "nogesture" in t:
-        return "NoGesture"
+#    if "gesture" in t:
+#        return "Gesture"
+#    if "nogesture" in t:
+#        return "NoGesture"
 
-    return "NoGesture"
+#    return "NoGesture"
 
 
 # -------------------------------------------------------
 # 5. 전체 비디오 처리 + CSV 저장
 # -------------------------------------------------------
-output_path = f"output/{videoname}8class.csv"
+output_path = f"output/pure8class/{videoname}.csv"
 os.makedirs("output", exist_ok=True)
 
 rows = []

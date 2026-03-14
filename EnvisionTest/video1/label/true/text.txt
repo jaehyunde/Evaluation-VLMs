@@ -1,8 +1,0 @@
-000-095.csv
-
-No Keypoint
-No Movement
-
-from annotation.eaf
-
-10 sek takt geschnitten

@@ -1,6 +1,6 @@
 index,label
 0,other
-1,indexing
+1,drawing
 2,other
 3,other
 4,other
@@ -72,7 +72,7 @@ index,label
 70,other
 71,other
 72,other
-73,indexing
+73,other
 74,clapping
 75,other
 76,other
@@ -126,8 +126,10 @@ index,label
 124,other
 125,other
 126,other
+127,other
 128,other
 129,other
+130,other
 131,other
 132,other
 133,other

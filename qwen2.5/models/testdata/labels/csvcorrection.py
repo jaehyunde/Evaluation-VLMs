@@ -1,21 +1,18 @@
 import pandas as pd
-import os
 
-# 원본 파일 경로
-input_path = "2Clinician_id1_vid1.csv"
+videoname =  "edab"
+# 파일 경로
+input_path = f"{videoname}.csv"
 
-# CSV 불러오기
+# CSV 파일 불러오기
 df = pd.read_csv(input_path)
 
-# 1️⃣ index 열 추가 (0부터 시작)
-df.insert(0, "index", range(len(df)))
+# index, label 열만 남기기 (존재할 경우만)
+columns_to_keep = [col for col in ["index", "label"] if col in df.columns]
+df = df[columns_to_keep]
 
-# 2️⃣ start_t, end_t 열 제거 (존재할 경우만)
-df = df.drop(columns=["start_t", "end_t"], errors="ignore")
-
-# 3️⃣ 파일 이름 변경 후 저장
-base, ext = os.path.splitext(input_path)
-output_path = f"{base}_index{ext}"
+# 결과 저장 (덮어쓰지 않으려면 파일명 변경 가능)
+output_path = f"{videoname}pure.csv"
 df.to_csv(output_path, index=False)
 
-print(f"✅ 파일 저장 완료: {output_path}")
+print(f"✅ 정리 완료! 저장된 파일: {output_path}")

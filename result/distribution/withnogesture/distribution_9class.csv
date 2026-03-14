@@ -1,0 +1,5 @@
+Model,emblematic,indexing,representing,molding,acting,drawing,beat,other,nogesture,Valid_Samples,Outlier_Details
+Ground Truth,21,165,21,44,64,44,26,81,570,1036,None
+qwen2.5,62,272,237,62,0,0,0,130,273,1036,None
+LLaVA-OneVision,3,16,0,0,0,1,0,332,669,1021,"clapping: 10, prayer: 1, wave: 1, thumbs-up: 3"
+LLaVA-NeXT,0,61,0,0,0,0,0,0,975,1036,None

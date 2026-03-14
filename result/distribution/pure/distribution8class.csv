@@ -1,0 +1,5 @@
+Model,emblematic,indexing,representing,molding,acting,drawing,beat,other,Valid_Samples,Outlier_Details
+Ground Truth,21,165,21,44,64,44,26,81,466,N/A
+qwen2.5,80,173,208,4,0,0,0,1,466,None
+LLaVA-OneVision,22,90,0,0,0,4,0,306,422,"clapping: 20, wave: 20, thumbs up: 4"
+LLaVA-NeXT-Video,0,368,0,98,0,0,0,0,466,None
