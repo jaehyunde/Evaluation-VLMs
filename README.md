@@ -2,6 +2,22 @@
 ## Bachelorarbeit
 
 Title: __Evaluation bestehender Modelle zur Gestenerkennung auf den Videodaten des Va.Si.Li-Lab Datensatzes__
+<img src="https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=Anaconda&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=Ubuntu&logoColor=white"/>
+![HuggingFace](https://img.shields.io/badge/huggingface-%23FFD21E.svg?style=for-the-badge&logo=huggingface&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=tensorflow&logoColor=white)
+![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white)
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
+<img src="https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white"/>
+![NumPy](https://img.shields.io/badge/NumPy-013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![LLaVA](https://img.shields.io/badge/Model-LLaVA-6A5ACD?style=for-the-badge&logo=openai&logoColor=white)
+![Qwen](https://img.shields.io/badge/Model-Qwen-FF6F00?style=for-the-badge&logo=alibabacloud&logoColor=white)
+
+
+---
 
 __Johann Wolfgang von Goethe Universität Frankfurt am Main__  
 Name: Jaehyun Shin  
