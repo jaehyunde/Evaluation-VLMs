@@ -1,39 +1,66 @@
-# Evaluation-VLMs
-## Bachelorarbeit
+# Vision-Language Model Evaluation for Gesture Recognition
 
-Title: __Evaluation bestehender Modelle zur Gestenerkennung auf den Videodaten des Va.Si.Li-Lab Datensatzes__
+Bachelor Thesis Project on Vision-Language Model Evaluation for Gesture Recognition using the Va.Si.Li-Lab Dataset.
 
+## 📖 Thesis Title
 
-![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=anaconda&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+> **Evaluation bestehender Modelle zur Gestenerkennung auf den Videodaten des Va.Si.Li-Lab Datensatzes**
+
+## 📌 Overview
+
+This project evaluates existing Vision-Language Models (VLMs) for gesture recognition tasks using video data from the Va.Si.Li-Lab dataset.
+
+The goal is to analyze the performance, robustness, and applicability of multimodal models such as LLaVA and Qwen in real-world gesture understanding scenarios.
+
+---
+
+## 🧠 Tech Stack
+
+### Programming Language
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+
+### AI / Deep Learning
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![NVIDIA](https://img.shields.io/badge/NVIDIA-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![LLaVA](https://img.shields.io/badge/LLaVA-6A5ACD?style=flat-square)
 ![Qwen](https://img.shields.io/badge/Qwen-FF6F00?style=flat-square)
 
+### Environment
+![Anaconda](https://img.shields.io/badge/Anaconda-44A833?style=flat-square&logo=anaconda&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+
+### Version Control
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+### Data Format
+![JSON](https://img.shields.io/badge/JSON-000000?style=flat-square&logo=json&logoColor=white)
+
+### Hardware
+![NVIDIA](https://img.shields.io/badge/NVIDIA-76B900?style=flat-square&logo=nvidia&logoColor=white)
 
 ---
 
-__Johann Wolfgang von Goethe Universität Frankfurt am Main__  
-Name: Jaehyun Shin  
-MatrikelNr.: 6555216  
-Studiengang: B.Sc. Informatik
+Author: Jaehyun Shin  
+B.Sc. Informatik  
+*Johann Wolfgang von Goethe Universität Frankfurt am Main*
 
 Text Technology Lab  
-__Betreuer: Prof. Dr. Alexander Mehler__  
+Supervisor: Prof. Dr. Alexander Mehler
+
+---
+
+## 🎓 Thesis Status
+
+Bachelor thesis successfully completed in April 2026.
 
 ---
 
 **Hinweis**: Dies Repository enthält keinen Datasatz, der für die Bachelorarbeit genutzt wurde, aufgrund der Lizenz.
 
-### Kurze Beschreibung über den Datensatz:
+### Beschreibung über den Datensatz:
 Der Datensatz besteht auf Videos und .eaf Datei.
 Eine .eaf Datei enthält Labels für ein Video.
 
