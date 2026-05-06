@@ -12,8 +12,6 @@ This project evaluates existing Vision-Language Models (VLMs) for gesture recogn
 
 The goal is to analyze the performance, robustness, and applicability of multimodal models such as LLaVA and Qwen in real-world gesture understanding scenarios.
 
----
-
 ## 🧠 Tech Stack
 
 ### Programming Language
@@ -49,8 +47,6 @@ B.Sc. Informatik
 
 Text Technology Lab  
 Supervisor: Prof. Dr. Alexander Mehler
-
----
 
 ## 🎓 Thesis Status
 
